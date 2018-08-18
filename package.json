@@ -4,7 +4,7 @@
     "description": "Prettier 中文文档",
     "main": "index.js",
     "scripts": {
-        "start": "gitbook --lrport 6973 --port 6966 serve --open"
+        "start": "gitbook --lrport 6973 --port 6966 serve"
     },
     "dependencies": {
       "gitbook-plugin-expandable-chapters": "^0.2.0",
