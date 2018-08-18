@@ -1,0 +1,19 @@
+{
+    "name": "prettier-cn",
+    "version": "1.0.0",
+    "description": "Prettier 中文文档",
+    "main": "index.js",
+    "scripts": {
+        "start": "gitbook --lrport 6973 --port 6966 serve --open"
+    },
+    "dependencies": {
+      "gitbook-plugin-expandable-chapters": "^0.2.0",
+      "gitbook-plugin-splitter": "^0.0.8"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/G-Grant/prettier-cn.git"
+    },
+    "author": "G-Grant",
+    "license": "MIT"
+}

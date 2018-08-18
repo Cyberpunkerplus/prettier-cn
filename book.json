@@ -1,0 +1,6 @@
+{
+    "title": "Prettier",
+    "description": "Prettier 中文文档",
+    "lanuguage": "zh",
+    "plugins": ["expandable-chapters", "splitter"]
+}
