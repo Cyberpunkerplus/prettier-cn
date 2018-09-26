@@ -16,4 +16,4 @@ npm install --save-dev --save-exact prettier
 npm install --global prettier
 ```
 
-> 由于我们会在补丁包中引入样式上的更改，所以我们推荐在你的 `package.json` 文件中明确 `prettier` 的版本号。
+> 由于我们会在补丁包中引入样式上的更改，所以我们推荐在你的 `package.json` 文件中明确引入的 `Prettier` 的版本号。
