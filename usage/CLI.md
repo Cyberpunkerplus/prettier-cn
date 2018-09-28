@@ -53,12 +53,72 @@ prettier --config ./my/.prettierrc --write ./my/file.js
 
 ## --require-pragma
 
+---
+
 ## --insert-pragma
+
+---
 
 ## --list-different
 
+---
+
+另一个有用的标记是 `--list-different` （或 `-l`），它会打印于 Prettier 的格式不同的文件名称。如果他们之间有差异，那么便会输出错误，这对于 CI 脚本十分有用。
+
 ## --no-config
+
+---
 
 不查找配置文件，默认使用。
 
 ## --config-precedence
+
+---
+
+定义如何结合 CLI 选项来处理配置文件
+
+**cli-override (default)**
+
+CLI 选项优先于配置文件
+
+**file-override**
+
+配置文件优先于 CLI 选项
+
+**prefer-file**
+
+如果找到配置文件，那么便使用它，忽略其他 CLI 选项。如果没有找到，那么 CLI 选项便会正常使用。此选项增加了编辑器集成，允许用户定义其默认配置，但希望遵守项目的特定配置。
+
+## --no-editorconfig
+
+---
+
+当解析配置时，不会考虑 .editorconfig，详细请看 [`prettier.resolveConfig` docs](https://prettier.io/docs/en/api.html)。
+
+## --with-node-modules
+
+---
+
+Prettier CLI 会忽略位于 `node_modules` 目录下的文件，可以通过 `--with-node-modules` 来退出此行为。
+
+## --write
+
+---
+
+重写目录下所有已处理的文件，这与 `eslint --fix` 的工作流程差不多。
+
+## --loglevel
+
+---
+
+改变 CLI 的日志级别。合法的选项如下：
+
++ `error`
++ `warn`
++ `log` (default)
++ `debug`
++ `silent`
+
+## --stdin-filepath
+
+---
